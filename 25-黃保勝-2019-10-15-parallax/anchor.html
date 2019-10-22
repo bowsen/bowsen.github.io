@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            margin:0;
+            height: 2500px;
+            }
+
+        .container{
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        /* 內容置中 */
+
+        nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+        /* 固定nav位置 */
+
+        nav .logo{
+            float:left;
+        }
+
+        nav .logo img{
+            height: 50px; 
+            padding: 5px;
+        }
+        nav .logo h1{
+            display:none;
+
+        }
+
+        nav ul{
+            float:right;
+            list-style-type: none;
+            margin: 0;
+            padding:0;
+        }
+            /* 第二步 置右邊 項目清除 (會有排序問題) */
+
+        nav ul li{
+            float:left;
+        }
+            /* 第一步，先置左 */
+
+        nav ul li a{
+            padding:20px 20px;
+            display: block;
+            text-decoration: none;
+        }
+        /* 文字區塊  無底線*/
+
+
+        .clearfix{
+            clear:both;
+
+        }
+        #section-1{
+            height: 800px;
+            background-image: url('https://cdn.pixabay.com/photo/2015/06/19/21/24/the-road-815297_960_720.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #section-2{
+            height: 800px;
+            background-image: url('https://cdn.pixabay.com/photo/2019/09/23/07/37/sunrise-4497745_960_720.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #section-3{
+            height: 800px;
+            background-image: url('https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+    </style>    
+
+
+<body>
+    <nav>
+        <div class="container">
+                <div class="logo">
+                        <img src="https://svgsilh.com/svg/1618917.svg">
+                        <h1>One Day</h1>
+                        
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#section-1">Morning</a>
+                        </li>
+                        <li>
+                            <a href="#section-2">Sunset</a>
+                        </li>
+                        <li>
+                            <a href="#section-3">Night</a>
+                        </li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+
+        
+    </nav>
+    <main>
+        <section id="section-1">
+            <div class="title"></div>
+        </section>
+        <section id="section-2">
+            <div class="title"></div>
+        </section>
+        <section id="section-3">
+            <div class="title"></div>
+        </section>        
+    </main>
+</body>
+</html>

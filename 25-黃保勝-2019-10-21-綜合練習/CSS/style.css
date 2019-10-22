@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+}
+main{
+    width:100%;
+}
+section{
+    width: 100%;
+}
+.flex {
+    display: flex;    
+}
+/* nva bar */
+.nav-background{
+    background-color: antiquewhite;
+}
+.nav-flex {
+    display: flex;
+    justify-content:flex-end;
+    padding-right: 100px;
+    
+}
+.logo{
+    float: left;
+    width: 17%;
+    height: 100px;
+    padding: 20px;
+    background-image: url("/images/logo.png");
+    background-size: cover;
+    background-position: center;
+}
+.menu{
+    float:right;
+    padding-top:50px;
+    
+}
+.clearfix{
+    clear:both;
+
+}
+.link-group {
+
+}
+
+.link-target{
+    display:inline-block;
+    padding:0 10px;
+}
+
+/* containe */
+#Section-first{
+
+}
+.container{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.bg-image{
+    width:40%;
+    height: 250px;
+    background-image: url("/images/apple.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.bg-image:hover{
+    background-image: url("/images/banana.jpg");
+}
+
+
+.text{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 3%;
+    width: 300px;
+}
+/* Section-second */
+.Fir_background{
+    height: 100vh;
+    background-image: url("/images/fruit.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.mask{
+    width:100%;
+    height: 100%;
+    background-color: rgba(233, 223, 222, 0.5);
+
+}
+.text-1{
+    padding:10px;
+    background-color: rgb(77, 72, 65);
+    font-size: 32px;
+    color:white;
+    position: relative;
+    left:calc(50% - 30px);
+    top:calc(50% - 40px);
+    letter-spacing: 5px;
+
+}
+.text-1:hover{
+    background-color: rgb(233, 146, 23);
+}
+
+/* Section-third */
+#Section-third{
+    width: 90%;
+    height: 100%;
+    padding:30px;
+    display: flex;
+    margin: auto;
+}
+
+.image-bale{
+    width:80%;
+    height: 400px;
+    background-image: url("/images/bale.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    background-color: blanchedalmond
+}
+@media(max-width:375px){
+    .body{
+        margin-right: -15px;
+    }
+    .logo{
+
+        margin-top: 5px;
+        width: 40px;
+        height: 40px;
+        background-image: url("/images/menu.png");
+        position: relative;
+        top: 5px;
+        margin-bottom: 10px;
+        left: 10px;
+    }
+
+    .nav-flex {
+        flex-direction: column;
+        /* display: none; */
+        
+    }
+    .menu{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left:0;
+    }
+    .menu:hover .nav-flex{
+        display: flex;
+        position: absolute;
+        left:0;
+        top:50px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .bg-image{
+        display: none;
+    }
+    .text{
+    }
+}
