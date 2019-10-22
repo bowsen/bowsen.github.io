@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="hover-menu.css">
+    <style>
+        @media(max-width:375px) {
+            .w-100 {
+                width: 100%
+            }
+
+            .d-inline-block {
+                display: inline-block;
+            }
+            /* 項目標示隠藏 */
+
+            .menu {
+                display: flex;
+            }
+            nav .logo{
+                width: 150px;
+            }
+            nav{
+                display: flex;
+                align-items:center;
+                justify-content: space-between;
+            }   
+            /* flex 垂直置中 */
+
+            li{
+                background-color: rgb(70, 184, 184);
+                color: antiquewhite;
+                padding: 10px;
+                margin:0 15px;
+
+            }
+            /* 分散對齊 */
+        }
+        @media(max-width:675px) {
+            .nav{
+                justify-content:center;
+                position: relative;
+            }
+            .logo{
+                order:2;
+            }
+            .menu{
+                display: none;
+                flex-direction: column;
+            }
+            /*隠藏 垂直排列 */
+            .menu-btn{
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                position: absolute;
+                left:0;
+            }
+            .menu-btn:hover .menu{
+                display: flex;
+                position: absolute;
+                left:0;
+                top:50px;
+                margin: 0;
+                padding: 0;
+
+            }
+            li{
+                margin:0;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><img class="w-100"src="https://cdn.pixabay.com/photo/2018/05/21/12/36/logo-3418125_960_720.png" alt=""></div>
+
+        <div class="menu-btn">
+            <ul class="menu">
+                <li class="d-inline-block">AAA</li>
+                <li class="d-inline-block">BBB</li>
+                <li class="d-inline-block">CCC</li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

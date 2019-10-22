@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+#nav {
+    display: flex;
+    justify-content: space-between;
+    background-color:black;
+
+}
+nav .logo{
+    color: white;
+}
+nav .title {
+    color:white;
+}
+
+nav .nav-menu{
+    list-style-type: none;
+    display: flex;
+    color: white;
+}
+@media (max-width:375px){
+    nav .nav-menu{
+        display: none;
+    }
+    
+    nav .nav-toggle{
+        background-image: url("../images/nav-toggle.png");
+        padding: 20px;
+        background-size: cover;
+        background-position: center;
+    }
+        
+    }
+}
